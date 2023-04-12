@@ -1,2 +1,2 @@
-# contentful-cloudflare-build
+# Contentful Cloudflare Build
  
