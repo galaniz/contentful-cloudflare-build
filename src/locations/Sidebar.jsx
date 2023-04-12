@@ -78,6 +78,12 @@ const Sidebar = () => {
     })();
   }, [sdk]);
 
+  /* Resize iframe */
+
+  useEffect(() => {
+    sdk.window.startAutoResizer();
+  }, []);
+
   /* Set message and button disabled and loading */
 
   const setResult = (type = 'build') => {
