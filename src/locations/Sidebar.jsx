@@ -146,6 +146,10 @@ const Sidebar = () => {
           if (pollJson.result.latest_stage.status === 'canceled') {
             throw new Error('Deploy canceled');
           }
+
+          if (pollJson.result.latest_stage.status === 'failure') {
+            throw new Error('Deploy failure');
+          }
         } else {
           throw new Error('Polling error');
         }
